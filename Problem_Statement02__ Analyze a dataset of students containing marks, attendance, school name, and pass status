@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOEHAuX3h35dGMDALR5psIJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem_Statement02__%20Analyze%20a%20dataset%20of%20students%20containing%20marks%2C%20attendance%2C%20school%20name%2C%20and%20pass%20status\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "0CeYjBsfoJRN"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem-2: A school wants to analyze the academic performance of 8 students.\n",
+        "Create a pandas DataFrame containing:\n",
+        "school name, student name, maths marks, science marks, english marks, attendance percentage, pass status(True/False)"
+      ],
+      "metadata": {
+        "id": "uPN_wE1BqrMc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'Name':[\"Ravi\",\"Priya\",\"Aman\",\"Neha\",\"Karan\",\"Simran\",\"Arjun\",\"Pooja\"],\n",
+        "    'School':[\"DPS\",\"DAV\",\"DPS\",\"KV\",\"DAV\",\"DPS\",\"KV\",\"DAV\"],\n",
+        "    'Maths':[85,71,92,88,95,68,78,74],\n",
+        "    'Science':[80,75,90,85,93,70,76,72],\n",
+        "    'English':[78,82,88,80,90,75,79,77],\n",
+        "    'Attendance':[95,88,97,92,99,85,90,87],\n",
+        "    'passed':[True,True,True,True,True,True,True,True,]\n",
+        "}\n",
+        "df=pd.DataFrame(data)\n",
+        "print(df)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yu-itFfGtEAg",
+        "outputId": "f506c10b-f5cc-461c-cc19-421021606096"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "     Name School  Maths  Science  English  Attendance  passed\n",
+            "0    Ravi    DPS     85       80       78          95    True\n",
+            "1   Priya    DAV     71       75       82          88    True\n",
+            "2    Aman    DPS     92       90       88          97    True\n",
+            "3    Neha     KV     88       85       80          92    True\n",
+            "4   Karan    DAV     95       93       90          99    True\n",
+            "5  Simran    DPS     68       70       75          85    True\n",
+            "6   Arjun     KV     78       76       79          90    True\n",
+            "7   Pooja    DAV     74       72       77          87    True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "FP52wYKYw9J1"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
