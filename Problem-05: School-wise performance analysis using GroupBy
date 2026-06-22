@@ -1,0 +1,123 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO3G78Tqrv5qdYuPTNoyV/q",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem-05%3A%20School-wise%20performance%20analysis%20using%20GroupBy\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "0CeYjBsfoJRN"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem_statement05-- A school management team wants to compare the academic performance of different schools"
+      ],
+      "metadata": {
+        "id": "uPN_wE1BqrMc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'Name':[\"Ravi\",\"Priya\",\"Aman\",\"Neha\",\"Karan\",\"Simran\",\"Arjun\",\"Pooja\"],\n",
+        "    'School':[\"DPS\",\"DAV\",\"DPS\",\"KV\",\"DAV\",\"DPS\",\"KV\",\"DAV\"],\n",
+        "    'Maths':[85,71,92,88,95,68,78,74],\n",
+        "    'Science':[80,75,90,85,93,70,76,72],\n",
+        "    'English':[78,82,88,80,90,75,79,77],\n",
+        "    'Attendance':[95,88,97,92,99,85,90,87],\n",
+        "    'passed':[True,True,True,True,True,True,True,True,]\n",
+        "}\n",
+        "df[\"Percentage\"]=(df[\"Maths\"]+df[\"Science\"]+df[\"English\"])/3\n",
+        "print(df[['Name','Percentage']])\n",
+        "df['Grade']=df['Percentage'].apply(grade)\n",
+        "def grade(p):\n",
+        "    if p>=90:\n",
+        "        return'A+'\n",
+        "    elif p>=80:\n",
+        "        return 'A'\n",
+        "    elif p>=70:\n",
+        "        return 'B'\n",
+        "    elif p>=60:\n",
+        "        return 'C'\n",
+        "    else:\n",
+        "        return 'F'\n",
+        "school_avg=df.groupby(\"School\")[['Maths','Science','English']].mean().round(1)\n",
+        "print(\"average marks by students\")\n",
+        "print(school_avg)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Yu-itFfGtEAg",
+        "outputId": "e22df74a-9b20-4aca-d3ed-64ed5e8981fa"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "     Name  Percentage\n",
+            "0    Ravi   81.000000\n",
+            "1   Priya   76.000000\n",
+            "2    Aman   90.000000\n",
+            "3    Neha   84.333333\n",
+            "4   Karan   92.666667\n",
+            "5  Simran   71.000000\n",
+            "6   Arjun   77.666667\n",
+            "7   Pooja   74.333333\n",
+            "average marks by students\n",
+            "        Maths  Science  English\n",
+            "School                         \n",
+            "DAV      80.0     80.0     83.0\n",
+            "DPS      81.7     80.0     80.3\n",
+            "KV       83.0     80.5     79.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n"
+      ],
+      "metadata": {
+        "id": "FP52wYKYw9J1"
+      },
+      "execution_count": 25,
+      "outputs": []
+    }
+  ]
+}
