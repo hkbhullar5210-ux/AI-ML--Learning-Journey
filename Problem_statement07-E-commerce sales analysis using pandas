@@ -1,0 +1,100 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNOXfPvEm4lopg5D+qCyyDq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem_statement07-E-commerce%20sales%20analysis%20using%20pandas\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "0CeYjBsfoJRN"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem_statement07-E-commerce sales analysis using pandas"
+      ],
+      "metadata": {
+        "id": "uPN_wE1BqrMc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "df=pd.DataFrame({\n",
+        "    \"Product\":[\"Laptop\",\"Mobile\",\"Earbuds\"],\n",
+        "    \"Sales\":[100,150,200]\n",
+        "})\n",
+        "print(df)\n",
+        "print(\"\\n Average sales:\")\n",
+        "print(df[\"Sales\"].mean())\n",
+        "print(\"\\n Highest sales:\")\n",
+        "print(df.loc[df[\"Sales\"].idxmax()])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sheFtNtf8I2W",
+        "outputId": "5e2e693f-857c-4ac2-8178-95e81d99550f"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "   Product  Sales\n",
+            "0   Laptop    100\n",
+            "1   Mobile    150\n",
+            "2  Earbuds    200\n",
+            "\n",
+            " Average sales:\n",
+            "150.0\n",
+            "\n",
+            " Highest sales:\n",
+            "Product    Earbuds\n",
+            "Sales          200\n",
+            "Name: 2, dtype: object\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "AiAdJ2xj-W72"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
