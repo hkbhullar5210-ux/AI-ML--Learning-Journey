@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyP/y+qw0uEwd38WxBuNIXqK",
+      "authorship_tag": "ABX9TyPCalUOFjC4ckn4xtlo9Jza",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -38,8 +38,10 @@
     {
       "cell_type": "markdown",
       "source": [
-        "Problem Statement 9- A factory produces 1000 mobile phones per day, out of which 20 are defective.\n",
-        "Find the probability of selecting a defective and a non-defective phone.\n"
+        "Problem Statement 10- In a class of 100 students:\n",
+        "-60 students passed mathematics.\n",
+        "-40 students passed both Mathematics and Science\n",
+        "Find the probability that a student passed Science given that the student has already passed Mathematics."
       ],
       "metadata": {
         "id": "3qqyE485Bm7c"
@@ -48,39 +50,32 @@
     {
       "cell_type": "code",
       "source": [
-        "total_phones=10000\n",
-        "defective_phones=20\n",
-        "p_defective=defective_phones/total_phones\n",
-        "p_non_defective=1-p_defective\n",
-        "print(\"Total phones=\",total_phones)\n",
-        "print(\"Defective phones=\",defective_phones)\n",
-        "print(\"\\n Probability of defectuve phone=\",p_defective)\n",
-        "print(\"\\n Probability of non-defective phone=\",p_non_defective)\n",
-        "print(\"\\n percentage of defective phones=\",p_defective*100,\"%\")\n",
-        "print(\"percentage of non-defective phones=\",p_non_defective*100,\"%\")"
+        "maths_pass=60\n",
+        "both_pass=40\n",
+        "p_science_given_maths=both_pass/maths_pass\n",
+        "print(\"Students passed Mathematics=\",maths_pass)\n",
+        "print(\"Students passed both mathematics and Science=\",both_pass)\n",
+        "print(\"\\n P(Science|Mathematics)=\",p_science_given_maths)\n",
+        "print(\"Percentage=\",p_science_given_maths*100,\"%\")"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "3NzZkFpCCeDi",
-        "outputId": "ca45cc74-a947-4043-c2a7-9d6c92ca5484"
+        "outputId": "832c913d-0f3d-4093-91fd-307bc6373268"
       },
-      "execution_count": 2,
+      "execution_count": 3,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Total phones= 10000\n",
-            "Defective phones= 20\n",
+            "Students passed Mathematics= 60\n",
+            "Students passed both mathematics and Science= 40\n",
             "\n",
-            " Probability of defectuve phone= 0.002\n",
-            "\n",
-            " Probability of non-defective phone= 0.998\n",
-            "\n",
-            " percentage of defective phones= 0.2 %\n",
-            "percentage of non-defective phones= 99.8 %\n"
+            " P(Science|Mathematics)= 0.6666666666666666\n",
+            "Percentage= 66.66666666666666 %\n"
           ]
         }
       ]
