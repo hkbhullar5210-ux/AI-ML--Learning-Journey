@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN7g0lDLLp/wFyGmkFS7bjv",
+      "authorship_tag": "ABX9TyP/y+qw0uEwd38WxBuNIXqK",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -38,9 +38,8 @@
     {
       "cell_type": "markdown",
       "source": [
-        "Problem Statement 8- A city weather department observed that it rained on 18 out of 30 days in july. Find:\n",
-        "1. Probability of rain on a random selected day.\n",
-        "2. Probability of no rain on a randomly selected day."
+        "Problem Statement 9- A factory produces 1000 mobile phones per day, out of which 20 are defective.\n",
+        "Find the probability of selecting a defective and a non-defective phone.\n"
       ],
       "metadata": {
         "id": "3qqyE485Bm7c"
@@ -49,41 +48,39 @@
     {
       "cell_type": "code",
       "source": [
-        "rainy_days=18\n",
-        "total_days=30\n",
-        "p_rain=rainy_days/total_days\n",
-        "p_no_rain=1-p_rain\n",
-        "print(\"Weather forecast probability analysis\")\n",
-        "print(\"------------------------\")\n",
-        "print(\"Total days:\",total_days)\n",
-        "print(\"rainy days:\",rainy_days)\n",
-        "print(\"\\n Probability of rain=\",p_rain)\n",
-        "print(\"Probability of no rain\",p_no_rain)\n",
-        "print(\"Percentage chance of rain=\",p_rain*100,'%')\n",
-        "print(\"Percentage chance of no rain=\",p_no_rain*100,'%')\n"
+        "total_phones=10000\n",
+        "defective_phones=20\n",
+        "p_defective=defective_phones/total_phones\n",
+        "p_non_defective=1-p_defective\n",
+        "print(\"Total phones=\",total_phones)\n",
+        "print(\"Defective phones=\",defective_phones)\n",
+        "print(\"\\n Probability of defectuve phone=\",p_defective)\n",
+        "print(\"\\n Probability of non-defective phone=\",p_non_defective)\n",
+        "print(\"\\n percentage of defective phones=\",p_defective*100,\"%\")\n",
+        "print(\"percentage of non-defective phones=\",p_non_defective*100,\"%\")"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "3NzZkFpCCeDi",
-        "outputId": "dfc2215d-3165-4a0d-c647-590e4f858a45"
+        "outputId": "ca45cc74-a947-4043-c2a7-9d6c92ca5484"
       },
-      "execution_count": 1,
+      "execution_count": 2,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Weather forecast probability analysis\n",
-            "------------------------\n",
-            "Total days: 30\n",
-            "rainy days: 18\n",
+            "Total phones= 10000\n",
+            "Defective phones= 20\n",
             "\n",
-            " Probability of rain= 0.6\n",
-            "Probability of no rain 0.4\n",
-            "Percentage chance of rain= 60.0 %\n",
-            "Percentage chance of no rain= 40.0 %\n"
+            " Probability of defectuve phone= 0.002\n",
+            "\n",
+            " Probability of non-defective phone= 0.998\n",
+            "\n",
+            " percentage of defective phones= 0.2 %\n",
+            "percentage of non-defective phones= 99.8 %\n"
           ]
         }
       ]
