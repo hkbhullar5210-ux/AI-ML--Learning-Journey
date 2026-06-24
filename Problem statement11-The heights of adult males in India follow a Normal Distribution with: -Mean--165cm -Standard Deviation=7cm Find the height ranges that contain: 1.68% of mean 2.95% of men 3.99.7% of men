@@ -1,0 +1,110 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNwkVsFFNjbHKohivqniKNs",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem%20statement11-The%20heights%20of%20adult%20males%20in%20India%20follow%20a%20Normal%20Distribution%20with%3A%20-Mean--165cm%20-Standard%20Deviation%3D7cm%20Find%20the%20height%20ranges%20that%20contain%3A%201.68%25%20of%20mean%202.95%25%20of%20men%203.99.7%25%20of%20men\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "n4giXnQKFTZm"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem statement11-The heights of adult males in India follow a Normal Distribution with:\n",
+        "-Mean--165cm\n",
+        "-Standard Deviation=7cm\n",
+        "Find the height ranges that contain:\n",
+        "1.68% of mean\n",
+        "2.95% of men\n",
+        "3.99.7% of men"
+      ],
+      "metadata": {
+        "id": "n1PvymhVKKx7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Normal Distribution Example\n",
+        "\n",
+        "mean = 165\n",
+        "std = 7\n",
+        "\n",
+        "# 68% range (μ ± 1σ)\n",
+        "range_68 = (mean - std, mean + std)\n",
+        "\n",
+        "# 95% range (μ ± 2σ)\n",
+        "range_95 = (mean - 2 * std, mean + 2 * std)\n",
+        "\n",
+        "# 99.7% range (μ ± 3σ)\n",
+        "range_997 = (mean - 3 * std, mean + 3 * std)\n",
+        "\n",
+        "print(\"Mean =\", mean, \"cm\")\n",
+        "print(\"Standard Deviation =\", std, \"cm\")\n",
+        "\n",
+        "print(\"\\n68% of men are between:\", range_68[0], \"and\", range_68[1], \"cm\")\n",
+        "print(\"95% of men are between:\", range_95[0], \"and\", range_95[1], \"cm\")\n",
+        "print(\"99.7% of men are between:\", range_997[0], \"and\", range_997[1], \"cm\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cRkNsgXAK2qB",
+        "outputId": "2c7cd355-89fe-461f-833d-19d6e0e381af"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mean = 165 cm\n",
+            "Standard Deviation = 7 cm\n",
+            "\n",
+            "68% of men are between: 158 and 172 cm\n",
+            "95% of men are between: 151 and 179 cm\n",
+            "99.7% of men are between: 144 and 186 cm\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "cef63Oo7K45B"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
