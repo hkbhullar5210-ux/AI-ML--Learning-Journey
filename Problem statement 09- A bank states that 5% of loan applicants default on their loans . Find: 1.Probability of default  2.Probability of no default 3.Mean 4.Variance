@@ -1,0 +1,104 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPEsZGV3k6xzYp2MvlgLHCO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem%20statement%2009-%20A%20bank%20states%20that%205%25%20of%20loan%20applicants%20default%20on%20their%20loans%20.%20Find%3A%201.Probability%20of%20default%20%202.Probability%20of%20no%20default%203.Mean%204.Variance\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "n4giXnQKFTZm"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem statement 09- A bank states that 5% of loan applicants default on their loans .\n",
+        "Find:\n",
+        "1.Probability of default\n",
+        "2.Probability of no default\n",
+        "3.Mean\n",
+        "4.Variance"
+      ],
+      "metadata": {
+        "id": "n1PvymhVKKx7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Bernoulli Distribution- Loan Default\n",
+        "p=0.05# Probability of default\n",
+        "#Probabilities\n",
+        "default=p\n",
+        "no_default=1-p\n",
+        "#Mean and variance\n",
+        "mean=p\n",
+        "variance=p*(1-p)\n",
+        "print(\"P(Default)=\",default)\n",
+        "print(\"P(No default)=\",no_default)\n",
+        "print(\"Mean=\",mean)\n",
+        "print(\"Variance=\",variance)\n",
+        "print(\"\\n Interpretation:\")\n",
+        "print(\"On average,5 out of every 100 loan applications will default.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cRkNsgXAK2qB",
+        "outputId": "eaea53de-f84a-4cac-cf92-ebff08c9e2a2"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "P(Default)= 0.05\n",
+            "P(No default)= 0.95\n",
+            "Mean= 0.05\n",
+            "Variance= 0.0475\n",
+            "\n",
+            " Interpretation:\n",
+            "On average,5 out of every 100 loan applications will default.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "cef63Oo7K45B"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
