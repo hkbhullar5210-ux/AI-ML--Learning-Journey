@@ -1,0 +1,87 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPR657JcmEmdMyp5JRKm9uG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem%20Statement-%20Convert%20education%20level%20to%20their%20numeric%20values.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem Statement- Convert education level to their numeric values."
+      ],
+      "metadata": {
+        "id": "pnLqdQAM4HBP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from sklearn.preprocessing import LabelEncoder\n",
+        "import pandas as pd\n",
+        "\n",
+        "df = pd.DataFrame({\n",
+        "    \"Education\":[\"Low\",\"Medium\",\"High\",\"Medium\",\"Low\"]\n",
+        "})\n",
+        "\n",
+        "encoder = LabelEncoder()\n",
+        "\n",
+        "df[\"Education_Code\"] = encoder.fit_transform(df[\"Education\"])\n",
+        "\n",
+        "print(df)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WuTmPKUq34AA",
+        "outputId": "de12cf2d-e74c-4856-bf83-9ffe0cb654d6"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "  Education  Education_Code\n",
+            "0       Low               1\n",
+            "1    Medium               2\n",
+            "2      High               0\n",
+            "3    Medium               2\n",
+            "4       Low               1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "c5wAUAtq4Qbk"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
