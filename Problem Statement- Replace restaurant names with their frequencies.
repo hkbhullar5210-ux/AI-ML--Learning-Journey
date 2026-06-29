@@ -1,0 +1,87 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPt3FL7IaM8wHDOG37AfbuR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hkbhullar5210-ux/AI-ML--Learning-Journey/blob/main/Problem%20Statement-%20Replace%20restaurant%20names%20with%20their%20frequencies.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem Statement- Replace restaurant names with their frequencies."
+      ],
+      "metadata": {
+        "id": "pnLqdQAM4HBP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "df = pd.DataFrame({\n",
+        "    \"Restaurant\":[\"A\",\"B\",\"A\",\"C\",\"A\",\"B\"]\n",
+        "})\n",
+        "\n",
+        "freq = df[\"Restaurant\"].value_counts()\n",
+        "\n",
+        "df[\"Frequency\"] = df[\"Restaurant\"].map(freq)\n",
+        "\n",
+        "print(df)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WuTmPKUq34AA",
+        "outputId": "a9bae629-9655-4e70-d32f-4a158079b0eb"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "  Restaurant  Frequency\n",
+            "0          A          3\n",
+            "1          B          2\n",
+            "2          A          3\n",
+            "3          C          1\n",
+            "4          A          3\n",
+            "5          B          2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "c5wAUAtq4Qbk"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
